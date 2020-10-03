@@ -58,3 +58,17 @@ $(document).ready(function(){
     centerMode: true
   });
 });
+
+// jQuery for adding active styling to the mountain schedule links.
+$('.schedule-link').on('click', function(){
+  $('a').removeClass('active');
+  $(this).addClass('active');
+
+  $('.mountain-schedule').css('display', 'none');
+  if($(this).text() === "MOUNTAIN 1") {
+    $('#mountain-schedule1').css('display', 'block');
+  } else if ($(this).text() === "MOUNTAIN 2") {
+    $('#mountain-schedule2').css('display', 'block');
+  }
+});
+
