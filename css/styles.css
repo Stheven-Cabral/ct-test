@@ -1,8 +1,9 @@
+/* GENERAL BODY STYLES */
 body {
   font-family: 'Bebas Neue', cursive;
 }
 
-/* Background Images */
+/* IMPLEMENTATION OF BACKGROUND IMAGES */
 .hero {
   background-image: url("../images/mountain1.png");
   background-repeat: no-repeat;
@@ -24,7 +25,7 @@ body {
   height: 100vh;
 }
 
-/* Navigation Bar Styles */
+/* NAVIGATION BAR STYLES */
 
 .logo {
   position: absolute;
@@ -458,8 +459,6 @@ footer {
 
 
 /* ----STYLING FOR VIEWS WITH A MIN-WIDTH OF 992px ----*/
-
-
 @media (min-width: 992px) {
   /* NAVIGATION BAR STYLES */
   .collapsed-navbar {

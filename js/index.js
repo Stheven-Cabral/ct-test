@@ -1,4 +1,4 @@
-// Code for changing Navbar style when scrolling to a specific section.
+// Code for the navigation bar's style when user scrolls to the 'History' section of th page.
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -30,11 +30,8 @@ function myFunction() {
   }
 }
 
-$(document).on("tap", function(){
-  myFunction();
-});
 
-// jQuery for responsive carousel feature
+// jQuery code that sets properties for the 'Slick' carousel plugin.
 $(document).ready(function(){
   $('.carousel-section').slick({
     dots: true,
@@ -57,7 +54,7 @@ $(document).ready(function(){
   });
 });
 
-// jQuery for adding active styling to the mountain schedule links.
+// jQuery code for adding active styling to the mountain schedule links.
 $('.schedule-link').on('click', function(){
   $('a').removeClass('active');
   $(this).addClass('active');
