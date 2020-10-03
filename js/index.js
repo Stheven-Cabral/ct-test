@@ -18,7 +18,7 @@ window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar");
 var historySection = document.getElementById("history");
 var teamSection = document.getElementById("team");
-var historySectionOffset = historySection.offsetTop - 25;
+var historySectionOffset = historySection.offsetTop - 120;
 var teamSectionOffset = teamSection.offsetTop - 125;
 var logoText = document.querySelector(".logo-text");
 var linksContainer = document.querySelector(".collapse");
@@ -52,10 +52,22 @@ $(document).on("tap", function(){
 $(document).ready(function(){
   $('.carousel-section').slick({
     dots: true,
-    infinte: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true
+    arrows: false,
+    centerMode: true,
+    slidesToShow: 1.5,
+    slidesToScroll: 2,
+    centerPadding: '20%',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '10%'
+        }
+      }
+    ]
   });
 });
 

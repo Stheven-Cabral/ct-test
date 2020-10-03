@@ -36,7 +36,7 @@ body {
   height: 65px;
   font-weight: 100;
   stroke: 10;
-  transition: all ease 0.2s;
+  transition: all ease 0.1s;
   z-index: 2;
 }
 
@@ -111,12 +111,12 @@ body {
 
 h1 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 5rem;
   vertical-align: top;
 }
 
 #losangeles-text {
   height: 75px;
+  font-size: 5rem;
   color: rgb(65, 65, 65);
   margin: 0;
   padding-top: 10px;
@@ -124,6 +124,7 @@ h1 {
 
 #mountains-text {
   height: 75px;
+  font-size: 5rem;
   background: -webkit-linear-gradient(rgb(56, 68, 99), rgb(31, 38, 54));
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -190,10 +191,16 @@ h1 {
   opacity: 0.8;
   left: 0;
   bottom: 0;
+  overflow: hidden;
+}
+
+.carousel-section {
+  width: 350px;
+  margin: auto;
 }
 
 .carousel-img {
-  margin: 20px 5px 10px;
+  margin: 20px 0px 10px 0px;
 }
 
 /* TEAM SECTION STYLES */
@@ -201,6 +208,9 @@ h1 {
   background-color: white;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   padding: 25px 15px 15px 15px;
 }
 
@@ -232,7 +242,7 @@ h1 {
 .mountain-schedule-nav {
   background-color: rgb(62, 73, 102);
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .schedule-link {
@@ -260,7 +270,7 @@ h1 {
 }
 
 .mountain-schedule {
-  width: 90%;
+  width: 340px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.6);
   margin: auto;
@@ -270,10 +280,6 @@ h1 {
 
 #mountain-schedule2 {
   display: none;
-}
-
-table {
-  margin: auto;
 }
 
 th {
@@ -290,3 +296,159 @@ td {
 #wide-dates {
   line-height: 75px;
 }
+
+
+/* FOOTER STYLES */
+footer {
+  background-color: rgb(62, 73, 102);
+  height: 85px;
+  position: relative;
+}
+
+.end-logo-container {
+  position: relative;
+}
+
+.end-logo {
+  padding: 5px 5px 0px 10px;
+  opacity: 0.2;
+}
+
+.end-logo-text {
+  visibility: visible;
+  position: absolute;
+  top: 10px;
+  left: 62px;
+  height: 75px;
+  width: 75px;
+}
+
+#losangeles-end-logo-text,
+#mountains-end-logo-text {
+  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  font-size: 1.7rem;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#losangeles-end-logo-text {
+  top: 2px;
+}
+
+#mountains-end-logo-text {
+  top: 24px;
+  letter-spacing: 1px;
+}
+
+.copyright-text {
+  position: absolute;
+  font-size: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.15);
+  right: 10px;
+  top: 33px;
+
+}
+
+
+/* ----STYLING FOR VIEWS WITH A MIN-WIDTH OF 768px ----*/
+
+
+@media (min-width: 768px) {
+  /* NAVIGATION BAR STYLES */
+  .collapsed-navbar {
+    position: absolute;
+    width: 300px;
+    right: 1px;
+    top: 10px;
+  }
+
+  /* HERO SECTION STYLES */
+  .site-intro-text {
+    padding-top: 200px;
+  }
+
+  #losangeles-text,
+  #mountains-text {
+    font-size: 7rem;
+    height: 105px;
+    padding: 0;
+  } 
+
+  /* HISTORY SECTION STYLES */
+  .history-header-container {
+    padding-top: 50px;
+  }
+
+  .history-text {
+    width: 90%;
+    padding-left: 50px;
+  }
+
+  .carousel-section {
+    width: 750px;
+    margin: auto;
+  }
+  
+  .carousel-img {
+    margin: 20px 0px 10px 0px;
+  }
+
+  /* TEAM SECTION STYLES */
+  .team-section-header {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .team-text {
+    position: absolute;
+    width: 75%;
+    top: 74px;
+    left: 190px;
+  }
+
+  .mountain-schedule-nav {
+    height: 50px;
+  }
+
+  .schedule-link {
+    font-size: 1.7rem;
+    padding-top: 7px;
+  }
+
+  .mountain-schedule {
+    margin: 0;
+    margin-top: 120px;
+    margin-left: 40px;
+  }
+
+  /* FOOTER STYLES */
+  .end-logo {
+    padding: 10px 5px 0px 10px;
+  }
+
+  .end-logo-text {
+    height: 70px;
+    top: 15px;
+  }
+
+  #losangeles-end-logo-text,
+  #mountains-end-logo-text {
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    font-size: 1.7rem;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.15);
+  }
+
+  .copyright-text {
+    font-size: 0.7rem;
+    right: 15px;
+  }
+  
+}
+
