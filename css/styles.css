@@ -1,3 +1,7 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+}
+
 /* Background Images */
 .hero {
   background-image: url("../images/mountain1.png");
@@ -31,9 +35,10 @@
   position: absolute;
   width: 100vw;
   height: 65px;
-  font-weight: 600;
+  font-weight: 100;
   stroke: 10;
   transition: all ease 0.2s;
+  z-index: 2;
 }
 
 .navbar-toggler {
@@ -47,13 +52,14 @@
 }
 .collapsed-navbar {
   position: absolute;
-  width: 105px;
+  width: 110px;
   right: 0px;
   top: 60px;
 }
 
 .nav-link {
   color: white;
+  font-family: 'Lato', sans-serif;
   text-decoration: underline;
   font-style: italic;
   font-size: 0.9rem;
@@ -98,7 +104,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Hero Section Styles */
+/* HERO SECTION STYLES */
 .site-intro-text {
   padding-top: 250px;
 }
@@ -123,4 +129,49 @@ h1 {
   -webkit-text-fill-color: transparent;
   margin: 0;
   letter-spacing: 2.5px;
+}
+
+
+/* HISTORY SECTION STYLES */
+.section-number {
+  height: 105px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: black;
+  font-size: 7rem;
+  font-weight: 900;
+  opacity: 0.2;
+}
+
+.history-topic-container {
+  position: relative;
+}
+
+.history-topic {
+  color: rgb(0, 16, 51);
+  position: absolute;
+  top: 50px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.history-topic::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  height: 18px;
+  width: 18px;
+  top: 10px;
+  opacity: 0.4;
+  z-index: 1;
+  top: 37px;
+}
+
+.history-text {
+  font-family: 'Lato', sans-serif;
+  width: 95%;
+  padding-left: 25px;
 }
