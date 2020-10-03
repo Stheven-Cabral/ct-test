@@ -1,18 +1,4 @@
 // Code for changing Navbar style when scrolling to a specific section.
-// window.onscroll = function() {myFunction()};
-
-// var navbar = document.getElementById("navbar");
-// var navbarChange = document.getElementById("mountains-text");
-// var navbarChangeOffset = navbarChange.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= navBarChangeOffset) {
-//     navbar.classList.add("sticky-navbar");
-//   } else {
-//     navbar.classList.remove("sticky-navbar");
-//   }
-// }
-
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -30,7 +16,7 @@ function myFunction() {
     logoText.style.visibility = 'visible';
     linksContainer.style.backgroundColor = 'white';
     navLinks.forEach(function(item) {
-      item.style.color = 'rgb(112, 112, 112)';
+      item.style.color = 'rgb(56, 68, 99)';
       } 
     )
   } else {

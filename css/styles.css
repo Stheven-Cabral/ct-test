@@ -140,6 +140,10 @@ h1 {
   justify-content: space-between;
 }
 
+.history-header-container {
+  padding-top: 45px;
+}
+
 .section-number {
   height: 105px;
   padding: 5px;
@@ -174,7 +178,6 @@ h1 {
   width: 18px;
   top: 10px;
   opacity: 0.4;
-  /* z-index: 1; */
   top: 37px;
 }
 
@@ -211,7 +214,7 @@ h1 {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  padding: 25px 15px 15px 15px;
+  padding: 45px 15px 35px;
 }
 
 .team-topic {
@@ -363,7 +366,7 @@ footer {
     position: absolute;
     width: 300px;
     right: 1px;
-    top: 10px;
+    top: 13px;
   }
 
   /* HERO SECTION STYLES */
@@ -462,80 +465,50 @@ footer {
   }
 
   /* HERO SECTION STYLES */
+
+  .logo {
+    left: 50px;
+  }
+
+  .logo-text {
+    left: 105px;
+  }
+
   .site-intro-text {
     padding-top: 200px;
   }
 
   /* HISTORY SECTION STYLES */
-  .history-header-container {
-    padding-top: 50px;
+  .section-number {
+    padding-left: 40px;
   }
 
   .history-text {
-    width: 90%;
-    padding-left: 50px;
-  }
-
-  .carousel-section {
-    width: 750px;
-    margin: auto;
-  }
-  
-  .carousel-img {
-    margin: 20px 0px 10px 0px;
+    padding-left: 75px;
   }
 
   /* TEAM SECTION STYLES */
-  .team-section-header {
-    position: relative;
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-
   .team-text {
-    position: absolute;
-    width: 75%;
-    top: 74px;
-    left: 190px;
+    width: 65%;
+    left: 215px;
   }
 
   .mountain-schedule-nav {
-    height: 50px;
-  }
-
-  .schedule-link {
-    font-size: 1.7rem;
-    padding-top: 7px;
+    padding-left: 20px;
   }
 
   .mountain-schedule {
-    margin: 0;
-    margin-top: 120px;
-    margin-left: 40px;
+    margin-left: 65px;
   }
 
   /* FOOTER STYLES */
-  .end-logo {
-    padding: 10px 5px 0px 10px;
-  }
 
   .end-logo-text {
-    height: 70px;
-    top: 15px;
-  }
-
-  #losangeles-end-logo-text,
-  #mountains-end-logo-text {
-    font-family: 'Bebas Neue', cursive;
-    position: absolute;
-    font-size: 1.7rem;
-    margin: 0px;
-    color: rgba(255, 255, 255, 0.15);
+    left: 118px;
   }
 
   .copyright-text {
-    font-size: 0.7rem;
-    right: 15px;
+    right: 75px;
   }
 }
 
