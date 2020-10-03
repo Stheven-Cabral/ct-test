@@ -41,3 +41,10 @@ function myFunction() {
     )
   }
 }
+
+// jQuery for responsive carousel feature
+$(document).ready(function(){
+  $('.carousel-section').slick({
+    dots: true,
+  });
+});
