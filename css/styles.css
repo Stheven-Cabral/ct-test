@@ -33,7 +33,6 @@ body {
 
 .navbar {
   position: absolute;
-  width: 100vw;
   height: 65px;
   font-weight: 100;
   stroke: 10;
@@ -50,6 +49,7 @@ body {
 .collapse {
   border-radius: 5%;
 }
+
 .collapsed-navbar {
   position: absolute;
   width: 110px;
@@ -68,7 +68,7 @@ body {
 
 .sticky {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100vw;
 }
 
@@ -133,6 +133,12 @@ h1 {
 
 
 /* HISTORY SECTION STYLES */
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .section-number {
   height: 105px;
   padding: 5px;
@@ -156,6 +162,7 @@ h1 {
   letter-spacing: 1px;
   font-weight: 700;
   opacity: 0.6;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .history-topic::before {
@@ -166,12 +173,86 @@ h1 {
   width: 18px;
   top: 10px;
   opacity: 0.4;
-  z-index: 1;
+  /* z-index: 1; */
   top: 37px;
 }
 
-.history-text {
+.history-text,
+.team-text {
   font-family: 'Lato', sans-serif;
-  width: 95%;
+  width: 100%;
   padding-left: 25px;
 }
+
+.carousel-container {
+  background-color: rgb(56, 68, 99);
+  height: 200px;
+  opacity: 0.8;
+  left: 0;
+  bottom: 0;
+}
+
+.carousel-img {
+  margin: 20px 5px 10px;
+}
+
+/* TEAM SECTION STYLES */
+.team-section-header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 25px 15px 15px 15px;
+}
+
+.team-topic {
+  color: rgb(0, 16, 51);
+  position: absolute;
+  top: 50px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  opacity: 0.6;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.team-topic::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  height: 18px;
+  width: 18px;
+  top: 10px;
+  opacity: 0.4;
+  top: 37px;
+}
+
+.team-text {
+  padding-right: 5px;
+}
+
+.mountain-schedule-nav {
+  background-color: rgb(62, 73, 102);
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-link {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  padding: 5px 20px;
+}
+
+#mountainlink1,
+#mountainlink2 {
+  color: rgb(155, 155, 155);
+  padding-bottom: 2px;
+}
+
+#mountainlink1:hover,
+#mountainlink2:hover,
+#mountainlink1:visited,
+#mountainlink2:visited {
+  background-color: rgb(155, 155, 155);
+  color: rgb(62, 73, 102);
+  text-decoration: underline;
+}
+

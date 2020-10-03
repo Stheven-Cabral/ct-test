@@ -17,7 +17,9 @@ window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
 var historySection = document.getElementById("history");
-var historySectionOffset = historySection.offsetTop - 125;
+var teamSection = document.getElementById("team");
+var historySectionOffset = historySection.offsetTop - 25;
+var teamSectionOffset = teamSection.offsetTop - 125;
 var logoText = document.querySelector(".logo-text");
 var linksContainer = document.querySelector(".collapse");
 var navLinks = document.querySelectorAll(".nav-link");
@@ -28,7 +30,7 @@ function myFunction() {
     logoText.style.visibility = 'visible';
     linksContainer.style.backgroundColor = 'white';
     navLinks.forEach(function(item) {
-      item.style.color = ' rgb(112, 112, 112)';
+      item.style.color = 'rgb(112, 112, 112)';
       } 
     )
   } else {
@@ -42,9 +44,17 @@ function myFunction() {
   }
 }
 
+$(document).on("tap", function(){
+  myFunction();
+});
+
 // jQuery for responsive carousel feature
 $(document).ready(function(){
   $('.carousel-section').slick({
     dots: true,
+    infinte: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true
   });
 });
