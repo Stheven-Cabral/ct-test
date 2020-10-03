@@ -1,0 +1,126 @@
+/* Background Images */
+.hero {
+  background-image: url("../images/mountain1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.history {
+  background-image: url("../images/mountain2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.team {
+  background-image: url("../images/mountain3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Navigation Bar Styles */
+
+.logo {
+  position: absolute;
+  top: 10px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100vw;
+  height: 65px;
+  font-weight: 600;
+  stroke: 10;
+  transition: all ease 0.2s;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+.collapse {
+  border-radius: 5%;
+}
+.collapsed-navbar {
+  position: absolute;
+  width: 105px;
+  right: 0px;
+  top: 60px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0.9rem;
+  padding-left: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.sticky-navbar {
+  background-color: white;
+}
+
+.logo-text {
+  position: absolute;
+  top: 10px;
+  left: 65px;
+  height: 50px;
+  width: 75px;
+  visibility: hidden;
+}
+
+#losangeles-logo-text,
+#mountains-logo-text {
+  position: absolute;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+#losangeles-logo-text{
+  color: rgb(112, 112, 112);
+}
+
+#mountains-logo-text {
+  top: 19px;
+  letter-spacing: 0.9px;
+  background: -webkit-linear-gradient(rgb(56, 68, 99), rgb(31, 38, 54));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section Styles */
+.site-intro-text {
+  padding-top: 250px;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  vertical-align: top;
+}
+
+#losangeles-text {
+  height: 75px;
+  color: rgb(65, 65, 65);
+  margin: 0;
+  padding-top: 10px;
+}
+
+#mountains-text {
+  height: 75px;
+  background: -webkit-linear-gradient(rgb(56, 68, 99), rgb(31, 38, 54));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  letter-spacing: 2.5px;
+}
