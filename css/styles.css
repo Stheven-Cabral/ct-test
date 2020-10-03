@@ -449,6 +449,93 @@ footer {
     font-size: 0.7rem;
     right: 15px;
   }
+}
+
+
+/* ----STYLING FOR VIEWS WITH A MIN-WIDTH OF 992px ----*/
+
+
+@media (min-width: 992px) {
+  /* NAVIGATION BAR STYLES */
+  .collapsed-navbar {
+    right: 50px;
+  }
+
+  /* HERO SECTION STYLES */
+  .site-intro-text {
+    padding-top: 200px;
+  }
+
+  /* HISTORY SECTION STYLES */
+  .history-header-container {
+    padding-top: 50px;
+  }
+
+  .history-text {
+    width: 90%;
+    padding-left: 50px;
+  }
+
+  .carousel-section {
+    width: 750px;
+    margin: auto;
+  }
   
+  .carousel-img {
+    margin: 20px 0px 10px 0px;
+  }
+
+  /* TEAM SECTION STYLES */
+  .team-section-header {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .team-text {
+    position: absolute;
+    width: 75%;
+    top: 74px;
+    left: 190px;
+  }
+
+  .mountain-schedule-nav {
+    height: 50px;
+  }
+
+  .schedule-link {
+    font-size: 1.7rem;
+    padding-top: 7px;
+  }
+
+  .mountain-schedule {
+    margin: 0;
+    margin-top: 120px;
+    margin-left: 40px;
+  }
+
+  /* FOOTER STYLES */
+  .end-logo {
+    padding: 10px 5px 0px 10px;
+  }
+
+  .end-logo-text {
+    height: 70px;
+    top: 15px;
+  }
+
+  #losangeles-end-logo-text,
+  #mountains-end-logo-text {
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    font-size: 1.7rem;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.15);
+  }
+
+  .copyright-text {
+    font-size: 0.7rem;
+    right: 15px;
+  }
 }
 
